@@ -1,0 +1,32 @@
+@import "../styles/common.scss";
+
+.home-container { width: 100%; height: 100%;
+
+  > .body-container { width: 100%; height: 100%; display: flex;
+
+    > .panel-left { width: 18%; height: 100%; border: 1px solid red;padding: 6px 16px;
+
+      > .title { display: flex; justify-content: space-between; border-bottom: 1px dashed #ccc;
+
+        :first-child { color: #333; }
+
+        :last-child { color: #0085fa; cursor: pointer; }
+
+      }
+
+      > .sort-detail { border: 1px solid pink;
+
+        > ul {
+          > li { margin-top: 4px;
+            > img{width: 1.2em;height: 1.2em;}
+          }
+
+          > li:hover { background-color: $base-color; cursor: pointer;}
+        }
+      }
+    }
+
+    > .panel-right { border: 1px solid yellow; }
+  }
+
+}
