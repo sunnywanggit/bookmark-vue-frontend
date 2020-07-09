@@ -1,0 +1,105 @@
+.header-container {
+  .header {
+    width: 100%;
+    background: #17174c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px 0 30px;
+    box-sizing: border-box;
+    .section {
+      display: flex;
+      > .logo{
+        margin: 4px 0 4px 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        > img{width: 1.5rem;}
+        > span{color: white;color:#ffcca0;font-size: .5rem}
+        }
+      ul {
+        display: flex;
+        align-items: center;
+        margin-left: 60px;
+        li {
+          margin-right: 30px;
+          a {
+            color: #fff;
+            opacity: .5;
+            &:hover, &.active {
+              opacity: 1;
+              };
+            }
+          }
+        }
+      }
+    .dropdown-link {
+      color: #fff;
+      .username { padding-right: 10px; }
+      .ivu-icon { margin-left: 5px; }
+      }
+    img {
+      outline: none;
+      &.avatar {
+        border-radius: 50%;
+        width: 42px;
+        height: 42px;
+        vertical-align: middle;
+        background: #eee;
+        }
+      }
+
+    }
+
+  .github-corner {
+    svg {
+      fill: #42b983;
+      color: #fff;
+      position: absolute;
+      top: 0;
+      border: 0;
+      right: 0;
+      }
+    .octo-arm {
+      transform-origin: 130px 106px;
+      }
+    &:hover {
+      .octo-arm {
+        -webkit-animation: octocat-wave .56s ease-in-out;
+        animation: octocat-wave .56s ease-in-out;
+        }
+      }
+
+    }
+
+  @-webkit-keyframes octocat-wave {
+    0%, 100% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+      }
+    20%, 60% {
+      -webkit-transform: rotate(-25deg);
+      transform: rotate(-25deg);
+      }
+    40%, 80% {
+      -webkit-transform: rotate(10deg);
+      transform: rotate(10deg);
+      }
+    }
+  @keyframes octocat-wave {
+    0%, 100% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+      }
+    20%, 60% {
+      -webkit-transform: rotate(-25deg);
+      transform: rotate(-25deg);
+      }
+    40%, 80% {
+      -webkit-transform: rotate(10deg);
+      transform: rotate(10deg);
+      }
+    }
+
+  }
